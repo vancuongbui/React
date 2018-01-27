@@ -1,0 +1,46 @@
+//The project is to create a page to display the weather condition, temperature
+//in cluding: on search box, 1 button search and 6 temperature chart.
+
+API weather forcast in 5 day at any city:
+api.openweathermap.org/data/2.5/forecast?q={city name},{country code}
+Key: 6d6e7b5994b6473f9c335b62e383e8f4
+     5a25325e4f3bab9d12e3024cac128d18
+API call:
+api.openweathermap.org/data/2.5/forecast?q={city name},{country code}
+Parameters:
+q city name and country code divided by comma, use ISO 3166 country codes
+
+Examples of API calls:
+api.openweathermap.org/data/2.5/forecast?q=London,us&mode=xml
+
+1. Middleware:
+    take in action to:
+        let it through
+        do something
+        at the end, send the result automatically to "reducer"
+    install Middleware Redus-promise
+        npm install --save redux-promise
+    
+    using:
+        import reduxPromise from 'redux-promise';
+        const createStoreWithMiddleware = applyMiddleware(reduxPromise)(createStore);
+
+        ReactDOM.render(
+        <Provider store={createStoreWithMiddleware(reducers)}>
+            <App />
+        </Provider>
+        , document.querySelector('.container'));
+
+2. Library Axios - for request, just like jquery
+    install: npm install --save Axios
+
+
+
+
+
+Note: query document:
+ReactDOM.render(
+  <Provider store={createStoreWithMiddleware(reducers)}>
+    <App />
+  </Provider>
+  , document.querySelector('.container'));

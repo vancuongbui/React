@@ -1,6 +1,10 @@
 //The project is to create a page to display the weather condition, temperature
 //in cluding: on search box, 1 button search and 6 temperature chart.
 
+Uninstall NPM package:
+    npm Uninstall package_name --save-dev
+    or: npm Uninstall package_name -g --save    //global
+
 API weather forcast in 5 day at any city:
 api.openweathermap.org/data/2.5/forecast?q={city name},{country code}
 Key: 6d6e7b5994b6473f9c335b62e383e8f4
@@ -44,3 +48,12 @@ ReactDOM.render(
     <App />
   </Provider>
   , document.querySelector('.container'));
+
+3. React-spacklines:
+    used for displaying chart
+    install: npm install --save react-spacklines
+
+    syntax:
+        <Spacklines data = {[3,5,4,6,7]}>   //line chart
+            <SpacklinesLine color="blue"/>
+        </Spacklines>
